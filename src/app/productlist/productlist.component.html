@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Quan li san pham</h1>
+    <input type="text" (input)="setValue($event)" />
+    {{myName}}
+    <div *ngIf="status">hien thi</div>
+    <button (click)="toggle()">toggle</button>
+    <table class=" table-broder table">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>ten</th>
+                <th>gia</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item product ; index as i">
+                <td></td>
+                <td>{{ item.id }}</td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.price }}</td>
+                <td>
+                    <button class="btn btn-danger" (click)="removeItem(item.id!)">xoa</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

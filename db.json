@@ -1,0 +1,15 @@
+{
+  "product": [
+    {
+      "id": 11,
+      "name": "san pham a",
+      "price": "100"
+    },
+    {
+      "name": "sach",
+      "description": "Mô tả sản phẩm là sách viết",
+      "price": 4000000,
+      "id": 12
+    }
+  ]
+}
